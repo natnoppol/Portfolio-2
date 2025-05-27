@@ -56,14 +56,16 @@ export default function ProjectArticle() {
               <FaExternalLinkAlt /> Live Site
             </a>
           )}
-          <a
-            href={project.repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded transition"
-          >
-            <FaGithub /> GitHub Repo
-          </a>
+         {project.repoUrl && (
+            <a
+              href={project.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded transition"
+            >
+              <FaGithub /> GitHub Repo
+            </a>
+          )}
         </div>
       </section>
 
