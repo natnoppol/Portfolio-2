@@ -4,7 +4,7 @@ export const projects = [
     slug: "javascript-frameworks",
     title: "JavaScript Frameworks",
     description: "Built a fully functional app using React and Noroff API.",
-    image: "/src/assets/Javascript-framwork.png",
+    image: "/src/assets/Javascript-framework.png",
     articlePage: "/project/javascript-frameworks",
     liveUrl: "https://melodious-zabaione-3dc24c.netlify.app/",
     repoUrl: "https://github.com/natnoppol/ecom-react-natnoppol"

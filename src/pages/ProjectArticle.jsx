@@ -27,7 +27,7 @@ export default function ProjectArticle() {
       <Link to="/" className="inline-block mt-8 text-blue-600 hover:underline">
         ← Back to Home
       </Link>
-      
+
       <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
       <img
         src={project.image}
@@ -46,14 +46,16 @@ export default function ProjectArticle() {
         <h3>Live Site & Repository</h3>
 
         <div className="flex flex-wrap gap-4 mt-2">
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition"
-          >
-            <FaExternalLinkAlt /> Live Site
-          </a>
+           {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition"
+            >
+              <FaExternalLinkAlt /> Live Site
+            </a>
+          )}
           <a
             href={project.repoUrl}
             target="_blank"
