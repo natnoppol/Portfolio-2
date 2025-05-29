@@ -16,7 +16,7 @@ export default function Home() {
 
       <main>
         {/* Project List with card container */}
-        <section className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
+        <section className="grid grid-cols-1 gap-8">
           <ProjectList />
         </section>
 
@@ -28,7 +28,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-6 py-3 bg-indigo-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition duration-300"
           >
-            <FiDownload size={24} />
+            <FiDownload size={24} aria-hidden={true} />
             Download Reflections PDF
           </a>
         </div>
