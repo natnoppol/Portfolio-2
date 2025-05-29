@@ -4,22 +4,35 @@ import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
   return (
-    <div className="p-4 max-w-5xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Welcome to the Project Dashboard</h1>
+    <div className="p-6 max-w-6xl mx-auto bg-gradient-to-br from-indigo-50 via-white to-indigo-100 min-h-screen rounded-lg shadow-lg">
+      <header className="mb-10 text-center">
+        <h1 className="text-4xl font-extrabold text-indigo-700 mb-2">
+          Welcome to the Project Dashboard
+        </h1>
+        <p className="text-indigo-500 text-lg">
+          Here you can explore all my projects and download reflections.
+        </p>
+      </header>
 
-      <ProjectList />
+      <main>
+        {/* Project List with card container */}
+        <section className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
+          <ProjectList />
+        </section>
 
-      <div className="mt-6">
-        <a
-          href="/reflections.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700 transition-colors duration-300"
-        >
-          <FiDownload size={20} />
-          Download Reflections PDF
-        </a>
-      </div>
+        {/* Download Reflections PDF Button */}
+        <div className="mt-12 flex justify-center">
+          <a
+            href="/reflections.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-6 py-3 bg-indigo-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition duration-300"
+          >
+            <FiDownload size={24} />
+            Download Reflections PDF
+          </a>
+        </div>
+      </main>
     </div>
   );
 }
