@@ -34,7 +34,12 @@ export default function ProjectArticle() {
         alt={`${project.title} screenshot`}
         className="w-full max-w-3xl mb-4 rounded shadow"
         loading="lazy"
+        onError={(e) => {
+          e.currentTarget.onerror = null;
+          e.currentTarget.src = "/images/placeholder.png";
+        }}
       />
+
       <p className="mb-6">{project.description}</p>
 
       <section className="prose max-w-none">
@@ -46,30 +51,28 @@ export default function ProjectArticle() {
         <h3>Live Site & Repository</h3>
 
         <div className="flex flex-wrap gap-4 mt-2">
-           {project.liveUrl && (
+          {project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition"
+              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded shadow transition"
             >
-              <FaExternalLinkAlt /> Live Site
+              <FaExternalLinkAlt size={18} /> Live Site
             </a>
           )}
-         {project.repoUrl && (
+          {project.repoUrl && (
             <a
               href={project.repoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded transition"
+              className="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white font-semibold py-2 px-5 rounded shadow transition"
             >
-              <FaGithub /> GitHub Repo
+              <FaGithub size={18} /> GitHub Repo
             </a>
           )}
         </div>
       </section>
-
-      
     </main>
   );
 }
