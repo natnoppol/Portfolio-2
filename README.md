@@ -1,14 +1,11 @@
-# JavaScript Frameworks - Holidaze
+![banner img](https://github.com/natnoppol/portfolio-webpage/blob/main/image/portfolio-logo.png)
+# Welcome to Portfolio-2 (Frontend only)
 
-This is my JavaScript Frameworks course assignment at Noroff. The goal was to create a React-based accommodation booking platform that fetches and displays data from an API, with features like listing venues, managing bookings, and user authentication.
-
-## 📸 Screenshot
-
-![Holidaze screenshot](./public/screenshot.jpg)
+## It is a program written by Javascript, HTML and CSS to receive commands and respond. Made by Natnoppol Pansantia, this project was created for learning Javascript, HTML and CSS.  💖 This website is for those who are new to using html css javascript to create a website.
 
 ## 🚀 Live Site
 
-[Visit Holidaze Live](https://your-live-site.netlify.app)
+[Visit Portfolio Live](https://portfolio-2-delta-virid.vercel.app/)
 
 ## 🛠️ Built With
 
@@ -17,40 +14,23 @@ This is my JavaScript Frameworks course assignment at Noroff. The goal was to cr
 - [Tailwind CSS](https://tailwindcss.com/)
 - [React Router](https://reactrouter.com/)
 - [Noroff API](https://api.noroff.dev/)
-- [Netlify](https://www.netlify.com/)
+- [Vercel](https://www.Vercel.com/)
 
-## 📁 Features
 
-- Fetches venue and booking data from the Noroff API
-- User authentication: register/login/logout
-- View venue details and make bookings
-- Form validation and error handling
-- Responsive design and mobile-first layout
+## Steps for installation
 
-## ✍️ Improvements Based on Feedback
+```
+bash
+git clone natnoppol/Portfolio-2
 
-- Added input validation for all forms
-- Improved accessibility (ARIA labels, semantic HTML)
-- Optimized images and components for performance
-- Enhanced UI with better layout and spacing using Tailwind
-- Clearer error messaging and form handling
+```
+
 
 ## 🔗 GitHub Repository
 
-[View on GitHub](https://github.com/yourusername/jsfw-holidaze)
+[View on GitHub](https://github.com/natnoppol/Portfolio-2)
 
-## 📌 Lessons Learned
 
-- How to build scalable React components
-- Proper routing structure using React Router
-- How to manage state and side effects using hooks
-- Importance of user experience, accessibility, and design consistency
-
-## 👤 Author
-
-**Your Name**  
-[Portfolio Website](https://your-portfolio-site.com)  
-[GitHub Profile](https://github.com/yourusername)
 
 ## 📄 License
 
