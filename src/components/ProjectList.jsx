@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { projects } from "../data/projects"; 
-//react
 import React from "react";
 
 export default function ProjectList() {
@@ -19,6 +18,10 @@ export default function ProjectList() {
               alt={`${title} thumbnail`}
               className="w-full h-48 object-cover"
               loading="lazy"
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = "/images/placeholder.png";
+              }}
             />
             <div className="p-4 bg-white dark:bg-gray-800">
               <h3 className="text-xl font-semibold mb-2">{title}</h3>
